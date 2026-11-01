@@ -8,7 +8,7 @@ The game has five levels, and each level has two challenges. A challenge is a br
 
 - A correct fix is a **Treat**. Clearing both challenges in a level awards 10 points.
 - An incorrect fix is a **Trick**. The score does not change, and the challenge stays open.
-- A perfect run, with no hints, is 50 points.
+- A perfect run with no hints, is 50 points.
 
 The player has two hints for the whole game. Each hint costs 5 points and requests a short clue from the local model. The game remains playable if Ollama is not running; the hint then reports that the model could not be reached.
 
@@ -16,7 +16,7 @@ The player has two hints for the whole game. Each hint costs 5 points and reques
 
 - Python 3.10 or later
 - The packages in `requirements.txt`
-- Optional: [Ollama](https://ollama.com) with a local chat model. The game prefers `gemma2:2b` when it is installed.
+- Ollama with a local chat model uses `gemma2:2b`
 
 ## Run
 
@@ -25,7 +25,6 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-Open the URL Streamlit prints, usually http://localhost:8501.
 
 ## Layout
 
